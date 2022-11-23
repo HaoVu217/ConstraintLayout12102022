@@ -6,15 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:src="@drawable/image_1"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintEnd_toStartOf="@id/Text_View_B"
+        android:id="@+id/Text_View_A"
+        android:text="A"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:background="#3F51B5"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintDimensionRatio="875:1920"
-        android:layout_width="0dp"
-        android:layout_height="200dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Text_View_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:text="B"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Text_View_C"
+        app:layout_constraintStart_toEndOf="@id/Text_View_A"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/Text_View_C"
+        android:text="C"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:background="#009688"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@id/Text_View_B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
 
 
